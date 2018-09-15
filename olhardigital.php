@@ -9,7 +9,6 @@ $views = __DIR__ . '/app/views';
 $cache = __DIR__ . '/app/cache';
 
 $link = "https://olhardigital.com.br/noticias/recentes";
-
 $blade = new Blade($views, $cache);
 
 echo $blade->view()->make('index', ['news' => follow_links($link)])->render();
